@@ -1,0 +1,168 @@
+/*General*/
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    background-color: #C3E3B1;
+}
+
+h1 {
+    margin: 0px;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.pokedex {
+    width: 600px;
+    height: 800px;
+    background-image: url("img/pokedex.png");
+    background-size: 600px 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/*Upper Screen*/
+.upperscreen {
+    width: 230px;
+    height: 213px;
+    position: relative;
+    left: 250px;
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_imgPokemon {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgPokemon {  
+    height: 70%;
+}
+
+#namePokemon::first-letter {
+    text-transform: capitalize;
+}
+
+#namePokemon {
+    border: 4px solid red;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #DBFFC7;
+}
+
+
+
+/*Lower Screen*/
+.lowerscreen {
+    width: 230px;
+    height: 213px;
+    position: relative;
+    top: 280px;
+    left: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+    input by cohencoo:
+    https://uiverse.io/cohencoo/proud-husky-84
+*/
+.inputPokemon {
+    border-radius: 10px;
+    outline: 3px solid red;
+    border: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: #DBFFC7;
+    outline-offset: 3px;
+    padding: 10px 1rem;
+    transition: 0.25s;
+  }
+  
+  .inputPokemon:focus {
+    outline-offset: 5px;
+    background-color: #fff
+  }
+
+/*
+  button by satyamchaudharydev:
+  https://uiverse.io/satyamchaudharydev/purple-rat-85
+*/
+.btnSearch {
+    --bg: #e74c3c;
+    --text-color: #fff;
+    position: relative;
+    width: 150px;
+    border: none;
+    background: var(--bg);
+    color: var(--text-color);
+    padding: 1em;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border-radius: 5px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;
+  }
+  
+  .btnSearch:hover {
+    opacity: 1;
+  }
+  
+  .btnSearch:active {
+    top: 4px;
+    box-shadow: #c0392b 0px 3px 2px,#000 0px 3px 5px;
+  }
+
+
+
+/*Side Buttons*/
+.sideButtons {
+    position: relative;
+    width: fit-content;
+    top: 175px;
+    left: 484px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: #D8DFDB;
+    margin: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+}
+
+input[type="radio"]:checked {
+    animation-name: checked;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes checked {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: rgb(255, 143, 143);
+    }
+    100% {
+        background-color: red;
+    }
+}
